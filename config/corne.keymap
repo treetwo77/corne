@@ -38,13 +38,13 @@
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// | CTRL |     |     |     |     |     |   |  _  | "|" |  \  |  [  |  ]  |  `   |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  [  |  ]  |      |
+// | CTRL |     |     |     |     |     |   |  _  | "|" |  \  |  (  |  )  |  `   |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  +  |  -  |  =  |  {  |  }  |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | BCSP |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &trans
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PIPE  &kp BSLH        &kp LBKT &kp RBKT  &kp GRAVE
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY  &kp LBKT &kp RBKT  &trans
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PIPE  &kp BSLH        &kp LPAR &kp RPAR  &kp GRAVE
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp PLUS &kp MINUS  &kp EQUAL       &kp LBRC &kp LBRC  &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp BSPC
                         >;
