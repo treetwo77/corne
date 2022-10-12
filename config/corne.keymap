@@ -26,26 +26,26 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
-// | CTRL |  6  |  7  |  8  |  9  |  0  |   |     | LFT |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     | DWN |     |     |      |
+// |   `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |   ~  |
+// | SHFT |     |     |     | F5  |     |   |     |     |     |   {  |  } |      |
 //                    | DEL |     | ENT |   | ENT |     | BCSP |
                         bindings = <
    &kp TAB    &kp N1     &kp N2    &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8    &kp N9    &kp N0 &kp DELETE
-   &kp LCTRL  &kp N6     &kp N7    &kp N8       &kp N9       &kp N0         &trans   &kp LEFT &kp UP    &kp RIGHT &trans &trans
-   &kp LSHFT  &trans     &trans    &trans       &trans       &trans         &trans   &trans   &kp DOWN  &trans    &trans &trans
+   &kp GRAVE  &kp EXCL   &kp AT    &kp HASH     &kp DOLLAR   &kp PRCNT      &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
+   &kp LSHFT  &trans     &trans    &trans       &kp F5       &trans         &trans   &trans  &kp LBRC  &kp RBRC    &trans &trans
                           	  &kp DELETE     &trans      &kp RET        &kp RET  &trans   &kp BSPC
                         >;
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  [  |  ]  |      |
-// | CTRL |     |     |     |     |     |   |  _  | "|" |  \  |  (  |  )  |  `   |
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |  +  |  -  |  =  |  {  |  }  |  ~   |
+// | CTRL |     |     |     |     |     |   |     | LFT | DWN |  UP | RGT |     |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |  +  |  -  |  =  |  [  |  ]  |  \  |
 //                    | GUI |     | SPC |   | ENT |     | BCSP |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY  &kp LBKT &kp RBKT  &trans
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PIPE  &kp BSLH        &kp LPAR &kp RPAR  &kp GRAVE
-   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp PLUS &kp MINUS  &kp EQUAL       &kp LBRC &kp LBRC  &kp TILDE
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans
+   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp PLUS &kp MINUS  &kp EQUAL       &kp LBRC &kp LBRC &kp BSLH
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp BSPC
                         >;
                 };
