@@ -39,12 +39,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  [  |  ]  |      |
-// | CTRL |     |     |     |     |     |   |     | LFT | DWN |  UP | RGT |     |
+// | CTRL |     |     |     |     |     |   |     | LFT |  UP | DWN | RGT |     |
 // |BT_CLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  +  |  -  |  =  |  [  |  ]  |  \  |
 //                    | GUI |     | SPC |   | ENT |     | BCSP |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY  &kp LBKT &kp RBKT  &trans
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &trans    &kp LEFT  &kp UP           &kp DOWN &kp RIGHT  &trans
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp PLUS &kp MINUS  &kp EQUAL   &kp LBKT &kp RBKT &kp BSLH
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp BSPC
                         >;
